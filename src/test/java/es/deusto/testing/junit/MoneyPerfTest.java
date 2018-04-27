@@ -54,7 +54,7 @@ public class MoneyPerfTest {
 	
 	@Test 
     @PerfTest(invocations = 1000, threads = 20)
-    @Required(max = 400, average = 200)
+    @Required(max = 250, average = 120)
 	public void testBagMultiply() throws Exception {
 		logger.info("Starting testBagMultiply");
 		// {[12 CHF][7 USD]} *2 == {[24 CHF][14 USD]}
